@@ -4,7 +4,7 @@ import { RoundedButton } from './RoundedButton'
 export const Header = () => {
   return (
     <div className='flex justify-between items-center px-40 py-10 bg-primary'>
-        <h1 className='text-white text-4xl font-extrabold cursor-pointer'>Max<span className='text-secondary'>Momentum</span></h1>
+        <h1 className='text-white text-4xl font-extrabold cursor-pointer'>Matrix<span className='text-secondary'>Momentum</span></h1>
         <ul className='flex text-white justify-around grow'>
             <li className='cursor-pointer'>HOME</li>
             <li className='cursor-pointer'>ABOUT US</li>
