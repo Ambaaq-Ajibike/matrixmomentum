@@ -1,4 +1,5 @@
 import React from 'react'
+import { RoundedButton } from './RoundedButton'
 
 export const Header = () => {
   return (
@@ -18,7 +19,9 @@ export const Header = () => {
                     <option value="English">English</option>
                     <option value="Chinese">Chinese</option>
                 </select></li>
-                <li><button className='bg-secondary text-primary font-bold rounded-full p-3 px-7'>LOGIN</button></li>
+                <li>
+                    <RoundedButton bgColor='bg-secondary' color='text-primary' text='LOGIN' />
+                </li>
         </ul>
     </div>
   )
