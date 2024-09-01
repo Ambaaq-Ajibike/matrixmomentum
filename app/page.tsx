@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PlanCard } from "@/components/PlanCard";
 import { RoundedButton } from "@/components/RoundedButton";
@@ -147,7 +148,7 @@ export default function Home() {
           <div className="flex justify-center items-center flex-col md:grid grid-cols-3 md:place-items-center">
             {plans.map((plan, i) => <PlanCard hours={plan.hours} percentage={plan.percentage} planType={plan.planType} key={i} />)}
           </div>
-          <div className="bg-gray-950 text-white flex justify-between items-center p-4 mx-28 rounded">
+          <div className="bg-gray-950 text-white flex justify-between items-center p-4 md:mx-28 rounded">
         {
             trades.map((trade, id) => {
               return (
@@ -168,9 +169,9 @@ export default function Home() {
         }
       </div>
     </div>
-    <div className="bg-cover bg-center bg-no-repeat h-lvh w-full mt-28"
+    <div className="bg-cover bg-center bg-no-repeat w-full mt-28"
       style={{ backgroundImage: `url(${aboutImage})` }}>
-        <div className="w-[50%] pl-56 mt-48">
+        <div className="md:w-[50%] md:pl-56 mt-48 text-center md:text-left px-5">
         <div className="mb-10">
             <h1 className="uppercase text-4xl">Welcome To</h1>
             <h1 className="uppercase text-[#30198d] text-4xl">MatrixMomentum</h1>
@@ -182,13 +183,13 @@ export default function Home() {
           <p className="mb-10 text-lg text-gray-700">Due to their long investment horizon and attractive risk/return profile, our alternative investments are an ideal match for the requirements of Voxledger given our long-term liabilities.</p>
 
         </div>
-        <RoundedButton text="MORE ABOUT US" bgColor="white" color="text-primary" className="border-2 border-secondary border-solid"/>
+        <RoundedButton text="MORE ABOUT US" bgColor="white" color="text-primary" className="border-2 border-secondary border-solid !text-2xl font-bold"/>
         </div>
        
     </div>
-    <div className="bg-cover bg-center bg-no-repeat h-lvh w-full mt-28"
+    <div className="bg-cover bg-center bg-no-repeat w-full mt-28"
       style={{ backgroundImage: `url(${advanImage})` }}>
-        <div className="p-20 px-52">
+        <div className="p-20 md:px-52">
         <div className="mb-10">
             <h1 className="uppercase text-2xl text-yellow-500 mb-4">Why Choose Us</h1>
             <h1 className="uppercase text-white text-4xl">MatrixMomentum</h1>
@@ -217,7 +218,9 @@ export default function Home() {
     <div className="bg-black">
 
     </div>
-    </div>
 
+
+    <Footer/>
+    </div>
   );
 }
