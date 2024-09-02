@@ -91,11 +91,11 @@ export default function Home() {
     },
 
   ]
-  const payouts : PayOutType[] = [
-    {
+  // const payouts : PayOutType[] = [
+  //   {
        
-    }
-  ]
+  //   }
+  // ]
   const imageUrl = "/images/banner-bg.jpg";
   const aboutImage = "/images/about-bg.jpg";
   const advanImage = "/images/advan-bg.jpg";
