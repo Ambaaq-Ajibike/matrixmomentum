@@ -38,15 +38,9 @@ const page = () => {
     },
   ]
   return (
-    <div>
-        <Header/>
-        <PageTitle t1={"FAQ"} t2={""}/>
-        <div className='py-20 px-48 bg-center bg-cover bg-no-repeat text-gray-500' style={{backgroundImage: `url(${bgImg})`}}>
-            {faqs.map(q => <FaqComponent answer={q.answer} question={q.question}/>)}
-        </div>
-      
-        <Footer/>
-    </div>
+  <>
+  {faqs.map(q => <FaqComponent answer={q.answer} question={q.question}/>)}
+  </>
   )
 }
 
