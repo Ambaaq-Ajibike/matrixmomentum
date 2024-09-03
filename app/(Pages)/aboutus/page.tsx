@@ -7,9 +7,10 @@ import React from 'react'
 const AboutUs = () => {
     const bgImg = "/images/body-bg.jpg"
   return (
-    <>
+    <div className='py-20 md:flex md:gap-10 md:text-left text-center'>
          <div >
-                <h1 className='text-3xl my-7'>WELCOME TO</h1>
+          <div className='flex flex-col md:items-start items-center'>
+          <h1 className='text-3xl my-7'>WELCOME TO</h1>
                 <h1 className='text-primary text-4xl mb-5 font-bold'>MatrixMomentum</h1>
                 <Image
                     alt='line'
@@ -18,6 +19,8 @@ const AboutUs = () => {
                     height={45}
                     className='mb-5'
                 />
+          </div>
+               
                 <p className='text-lg my-4'>A leading investor and trusted partner for alternative assets. We create sustainable value for our clients and society.</p>
                 <p className='text-lg my-4'>MatrixMomentum is an award winning forex and stock broker, providing automated trading services and facilities to both retail and institutional clients. Through its policy of providing the best possible automated trading conditions to its clients and allowing both full time and part time investors automation for crypto trading. MatrixMomentum is the leading crypto trading bot for Binance, Coinbase Pro, Bitmex and more. Easy to use, self hosted trading bot software.</p>
                 <p className='text-lg my-4'>Due to their long investment horizon and attractive risk/return profile, our alternative investments are an ideal match for the requirements of MatrixMomentum given our long-term liabilities.</p>
@@ -27,7 +30,7 @@ const AboutUs = () => {
             <p className='text-lg my-4'>ACP as MatrixMomentum captive investment manager for alternative assets strives to invest sustainably across our three asset classes. In order to keep up with our ambition, we incorporate Environmental, Social and Governance (ESG) factors into our investment processes, for example through our exclusion policy, research, corporate and country analysis, monitoring and risk management. We firmly believe that considering ESG factors in investment management is not a short-term trend, but will change the business.</p>
             <p className='text-lg my-4'>ACP is committed to the United Nations Principles for Responsible Investment (UN PRI). Our parent company, MatrixMomentum Investors, is a signatory to the UN PRI, and so in addition to integrating ESG principles in our investment process, we also incorporate these into our ownership policies and practices and aim for appropriate disclosure on ESG issues by the entities in which we invest. Moreover, we strive to enhance the implementation effectiveness of the principles and regularly report on our activities and progress of implementation. Our commitment covers all assets we invest in.</p>
             </div>
-    </>
+    </div>
   )
 }
 

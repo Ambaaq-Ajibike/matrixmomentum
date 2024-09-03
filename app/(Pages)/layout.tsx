@@ -10,7 +10,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div>
     <Header/>
     <PageTitle t1={"ABOUT"} t2={"US"}/>
-    <div className='py-20 px-48 flex gap-10 bg-center bg-cover bg-no-repeat text-gray-500' style={{backgroundImage: `url(${bgImg})`}}>
+    <div className='md:px-48 py-10 px-5 bg-center bg-cover bg-no-repeat text-gray-500' style={{backgroundImage: `url(${bgImg})`}}>
         {children}
     </div>
     <Footer/>
