@@ -11,8 +11,8 @@ export const Header = () => {
     <div className='flex md:flex-row flex-col justify-between  md:items-center items-start md:px-40 px-10 py-10 bg-primary'>
       <div className='flex justify-between gap-10'>
       <h1 className='text-white text-4xl font-extrabold cursor-pointer'>Matrix<span className='text-secondary '>Momentum</span></h1>
-      <CiMenuBurger onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${!showMenu ?  "hidden" : ""} text-secondary text-4xl font-extrabold cursor-pointer`}/>
-        <IoMdClose  onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${showMenu ?  "hidden" : ""} text-secondary text-4xl font-extrabold cursor-pointer`}/>
+      <CiMenuBurger onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${showMenu ?  "hidden" : ""} text-secondary text-4xl font-extrabold cursor-pointer`}/>
+        <IoMdClose  onClick={() => setShowMenu(!showMenu)} className={`md:hidden ${!showMenu ?  "hidden" : ""} text-secondary text-4xl font-extrabold cursor-pointer`}/>
       </div>
         
        {
